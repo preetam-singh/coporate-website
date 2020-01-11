@@ -1,0 +1,27 @@
+
+#home-page{
+	.front-section{
+		background-image: url("../../../../../assets/home-page/front-page.jpg");
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+
+		.content{
+			background: rgba(255, 255, 255, 0.7);
+			display: inline-block;
+		}
+	}
+
+	.accomplishments-section{
+
+		img{
+			height: 128px;
+		}
+	}
+
+	.example-card {
+  max-width: 400px;
+}
+
+
+}
