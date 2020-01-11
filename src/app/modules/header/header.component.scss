@@ -1,0 +1,14 @@
+.navbar-collapse {
+		
+		a{
+			color: #9c27b0;
+			border: 1px solid #9c27b0;
+			transition: color, background 0.4s ease-out;
+			&:hover {
+				background:  #9c27b0;
+				color: white;
+		    }
+		}
+
+		
+}

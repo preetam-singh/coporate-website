@@ -1,27 +1,70 @@
-
+	
+.animated {
+    visibility: visible !important;
+}
 #home-page{
+
+	.front-section, .greetings-section, .accomplishments-section, .clients-section {
+		visibility: hidden;
+	}
+
 	.front-section{
 		background-image: url("../../../../../assets/home-page/front-page.jpg");
 		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;
-
+		min-height: 100vh;
 		.content{
-			background: rgba(255, 255, 255, 0.7);
+			visibility: hidden;
+			position: relative;
+			background: #9c27b0;
 			display: inline-block;
 		}
 	}
 
+	.greetings-section{
+		.col-sm-6:nth-child(2){
+			background: #9c27b0;
+		}
+	}
 	.accomplishments-section{
-
 		img{
 			height: 128px;
+			border: 5px solid #9c27b0;
+		}
+
+		p {
+			font-size: 1.5rem;
+			span{
+				font-size: 2.5rem;
+			}
 		}
 	}
 
-	.example-card {
-  max-width: 400px;
-}
+	.clients-section{
+		background: #f0f0f0;
+		.card {
+		  position: relative;
+		  max-width: 400px;
+
+			.links{
+			  	position: absolute;
+	    		top: calc(50% - 28px);
+	    		right: -28px;
+
+	    		.link-button{
+	    			background: white;
+	    			i{
+	    				font-size: 1.5rem;
+	    			}
+	    		}
+
+	    		
+			}
+		}
+	}
+
+
 
 
 }
