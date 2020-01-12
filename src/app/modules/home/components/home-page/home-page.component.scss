@@ -1,9 +1,9 @@
-	
-.animated {
-    visibility: visible !important;
-}
+.activate-counting{  }	
+.animated { visibility: visible !important; }
+
 #home-page{
 
+     
 	.front-section, .greetings-section, .accomplishments-section, .clients-section {
 		visibility: hidden;
 	}
@@ -19,47 +19,58 @@
 			position: relative;
 			background: #9c27b0;
 			display: inline-block;
+			font-family: 'Laila', sans-serif;
 		}
 	}
 
 	.greetings-section{
 		.col-sm-6:nth-child(2){
 			background: #9c27b0;
+			font-family: 'Alegreya Sans', sans-serif;
+			font-size:1.2rem;
 		}
 	}
 	.accomplishments-section{
+		font-family: 'Bellefair', sans-serif;
 		img{
 			height: 128px;
-			border: 5px solid #9c27b0;
+		    border: 1px solid #9c27b0;
+		    border-width: 10px;
+		    border-left-style: hidden;
 		}
 
 		p {
 			font-size: 1.5rem;
 			span{
 				font-size: 2.5rem;
+				color: #9c27b0;
 			}
 		}
 	}
 
 	.clients-section{
+		font-family: 'Bellefair', sans-serif;
 		background: #f0f0f0;
 		.card {
-		  position: relative;
-		  max-width: 400px;
+		  	position: relative;
+		  	max-width: 400px;
+		  	font-family: inherit;
+		  	p{
+		  		font-family: 'Alegreya Sans', sans-serif;
+		  	}
+		    .links{
+		  	    position: absolute;
+    			top: calc(50% - 28px);
+    			right: -28px;
 
-			.links{
-			  	position: absolute;
-	    		top: calc(50% - 28px);
-	    		right: -28px;
+    			.link-button{
+    				background: white;
+    				i{
+    					font-size: 1.5rem;
+    				}
+    			}
 
-	    		.link-button{
-	    			background: white;
-	    			i{
-	    				font-size: 1.5rem;
-	    			}
-	    		}
-
-	    		
+    		
 			}
 		}
 	}

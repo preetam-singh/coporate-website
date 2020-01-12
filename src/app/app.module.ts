@@ -6,6 +6,9 @@ import { HomeComponent } from './modules/home/home.component';
 import { HeaderComponent } from './modules/header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+
+import { CountingDirective } from './modules/home/shared/directives/counting/counting.directive';
+
 import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
 import {MatIconModule} from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
@@ -21,7 +24,8 @@ import { SidebarComponent } from './modules/sidebar/sidebar.component';
     HeaderComponent,
     HomePageComponent,
     FooterComponent,
-    SidebarComponent
+    SidebarComponent,
+    CountingDirective
   ],
   imports: [
     BrowserModule,
@@ -29,7 +33,8 @@ import { SidebarComponent } from './modules/sidebar/sidebar.component';
     MatIconModule,
     MatCardModule,
     MatButtonModule,
-     AnimateOnScrollModule.forRoot()
+     AnimateOnScrollModule.forRoot(),
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
