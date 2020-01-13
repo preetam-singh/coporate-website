@@ -21,9 +21,6 @@ export class CountingDirective implements OnInit {
 		}, 50);
 
 	}
-
-
-
 	
 	@HostListener('window:scroll', ['$event']) onScroll($event){
 
